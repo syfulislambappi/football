@@ -1,0 +1,417 @@
+/* ============= Fonts ============== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Utilities Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========== Heading Styles =========== */
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0a0826;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191f;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    color: #18191f;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============ Paragraph Styles ============ */
+p {
+    font-size: 16px;
+    color: #6c6c6c;
+    line-height: 26px;
+}
+
+/* =========== Button Styles ============= */
+button {
+    border: none;
+    padding: 10px 24px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    background-color: #e02c6d;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+}
+
+/* =========== Anchor Tag Styles ============= */
+a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 36px 0 0;
+}
+
+/* ========= Image Styles ============ */
+img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ========= Nav Section Styles ========== */
+header {
+    background-color:#2D25A0;
+    padding-top: 42px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.burger-btn {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    transition: background-color 0.5s;
+    display: none;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    padding-top: 67px;
+    padding-bottom: 86px;
+}
+
+.hero-content {
+    flex: 50%;
+    margin-right: 102px;
+}
+
+.hero-content h1 {
+    margin-bottom: 27px;
+}
+
+.hero-image {
+    flex: 50%
+}
+
+.hero-image img {
+    transition: transform .5s, box-shadow 0.5s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 0px 4px white;
+}
+
+/* Players Section Styles */
+.players-section {
+    padding-top: 70px;
+    padding-bottom: 75px;
+}
+
+.players-section .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+
+.players-card {
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.5s;
+}
+
+.players-card:hover {
+    box-shadow: none;
+}
+
+.players-img {
+    max-width: 300px;
+}
+
+.players-content {
+    margin-top: 16px;
+    margin-bottom: 18px;
+}
+
+/* ========== Highlights Section Styles */
+.highlights-section {
+    padding: 90px 0;
+}
+
+.highlights-content {
+    flex: 50%;
+    margin-right: 69px;
+}
+
+.highlights-content button {
+    margin-top: 24px;
+}
+
+.highlights-img {
+    flex: 50%;
+}
+
+.highlights-img img {
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.highlights-img img:hover {
+    transform: rotate(5deg);
+    box-shadow: 0 0 7px 0 black;
+}
+
+/* ########## Sponsors Section Styles ########### */
+.sponsors-section {
+    margin: 50px 0;
+}
+
+.sponsors-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sponsors-section h2 span {
+    color: #e02c6d;
+}
+
+.sponsors-section .container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sponsors-image {
+    max-width: 20%;
+}
+
+.sponsors-image img {
+    max-width: 70%;
+}
+
+/* ========= News Section Styles ========= */
+.news-section {
+    padding: 50px 0 100px 0;
+}
+
+.news-section .container > h2 {
+    text-align: center;
+}
+
+.news-section .container > h2 span {
+    color: #e02c6d;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.news-box {
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    margin-top: 50px;
+}
+
+.news-box p {
+    font-size: 14px;
+}
+
+.news-description {
+    margin: 20px 0;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e02c6d;
+    margin-bottom: 10px;
+}
+
+.news-tag {
+    border-left: 4px solid #e02c6d;
+    padding:0 10px;
+}
+
+.news-tag i {
+    transition: color 0.4s;
+    cursor: pointer;
+}
+
+.news-tag i:hover {
+    color: #e02c6d;
+}
+
+/* Footer Section Styles */
+footer {
+    padding-top: 68px;
+    padding-bottom: 63px;
+    text-align: center;
+}
+
+.footer-image {
+    max-width: 483px;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-links a {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    background-color: #e7e7e8;
+    border-radius: 50%;
+    line-height: 32px;
+    text-align: center;
+    margin: 20px 7px;
+
+}
+
+.social-links i {
+    color: #969BAB;
+    font-size: 17px;
+}
+
+footer p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* ######### Responsive Styles ############# */
+
+/* ### For Laptop Screen and Under ### */
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 42px;
+        background-color: #e02c6d;
+        width: 70%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .show-menu {
+        height: 250px;
+    }
+    .add-color {
+        background-color:#e02c6d;
+    }
+
+    .hero-section .container,
+    .highlights-section .container {
+        flex-direction: column;
+    }
+
+    .hero-content, .highlights-content {
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+
+    .players-section .container, .news-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ### For Mobile Screen and Under ### */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .players-section .container, .news-container {
+        grid-template-columns: repeat(1, 330px);
+        justify-content: center;
+    }
+
+    .sponsors-image {
+        max-width: 30%;
+        margin-bottom: 30px;
+    }
+}
